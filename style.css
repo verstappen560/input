@@ -1,50 +1,45 @@
-body {
-    margin: 0;
-    padding: 0;
+body{
+  display: flex;
+  flex-direction: column; 
+  background-color: rgb(4, 4, 60);
+}
+.header_img img{
+    width: 100px;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(0, 0, 43);
+}
+.right_header{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    overflow: hidden;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-h1 {
-    text-align: center; 
-}
-
-.container {
-    display: flex;
-    width: 400px;
-    border-top: 5px solid orange;
-    flex-direction: column;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.304);
     padding: 20px;
+    gap: 20px;
+    font-size: 20px;
 }
-
-.container form {
-    display: flex;
-    gap: 12px;
-    flex-direction: column;
+.right_header  input{
+    background-color: gray;
+    border-radius: 20px;
 }
-
-.names {
-    width: 400px;
-    display: flex;
-    justify-content: space-between;
-
+.right_header button{
+    font-size: 25px;
+    border-radius: 20px;
 }
-
-input, select {
-    padding: 10px 12px;
-    outline: none;
-    border: 1px solid grey;
-}
-
-button {
-    padding: 12px 0;
-    background-color: orange;
-    cursor: pointer;
-    border: none;
+.right_header p{
     color: white;
+}
+.first_header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+.smaller{
+    font: size 20px; ;
+}
+.bigger{
+    font-size: 40px;
 }
